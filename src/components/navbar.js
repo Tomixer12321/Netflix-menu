@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="nav-header">
         <img src={logo} alt="" />
         <button>
-          <GiHamburgerMenu />
+          <GiHamburgerMenu className="hamburger-icon"/>
         </button>
       </div>
       <div className="nav-list">

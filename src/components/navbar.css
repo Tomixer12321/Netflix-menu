@@ -1,60 +1,83 @@
 nav {
-    background-color: #141414;
+  background-color: #141414;
 }
-
 
 .navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-
 
 .nav-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
 }
-
 
 .nav-header img {
-    width: 110px;
-    margin-left: 30px;
+  width: 110px;
+  margin-left: 30px;
 }
-
 
 .nav-header button {
-    display: none;
+  display: none;
 }
-
 
 .nav-list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-
 
 .nav-list ul {
-    margin-right: 50px;
+  margin-right: 50px;
 }
-
 
 .nav-list li {
-    display: inline-block;
-    margin-left: 10px;
+  display: inline-block;
+  margin-left: 10px;
 }
-
 
 .nav-list a {
-    text-decoration: none;
-    color: #e5e5e5;
+  text-decoration: none;
+  color: #e5e5e5;
 }
 
-
-
-
-/* Od 700px a méně */
+@media (max-width: 700px) {
+  .navigation {
+    flex-direction:column;
+    justify-content:center;
+    align-items: flex-start;
+  }
+  .nav-header{
+    width: 100%;
+  }
+  .nav-header button{
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+  .hamburger-icon{
+    color: #e5e5e5;
+    font-size: 25px;
+    margin-right: 20px;
+  }
+  .nav-list li{
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .hide{
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.1s linear;
+  }
+  .show{
+    height: 150px;
+    transition: all 0.1 linear;
+    background-color: #141414;
+    width: 100%;
+  }
+}
