@@ -12,10 +12,10 @@ const Navbar = () => {
           <GiHamburgerMenu />
         </button>
       </div>
-      <div>
+      <div className="nav-list">
           <ul>
             {
-              links.map((onelink)=>{
+              links.map((onelink)=>{ 
                 const {id,text,url}=onelink
                 return <li key={id}>
                   <a href={url}>{text}</a>

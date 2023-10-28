@@ -1,0 +1,60 @@
+nav {
+    background-color: #141414;
+}
+
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+}
+
+
+.nav-header img {
+    width: 110px;
+    margin-left: 30px;
+}
+
+
+.nav-header button {
+    display: none;
+}
+
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.nav-list ul {
+    margin-right: 50px;
+}
+
+
+.nav-list li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+.nav-list a {
+    text-decoration: none;
+    color: #e5e5e5;
+}
+
+
+
+
+/* Od 700px a méně */
